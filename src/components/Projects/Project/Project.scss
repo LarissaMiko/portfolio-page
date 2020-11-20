@@ -1,7 +1,111 @@
 @import "../../../App.scss";
 
+.projects {
+  background: var(--clr-grey-10);
+}
 .project {
   position: relative;
+  display: grid;
+  margin-bottom: 4rem;
+}
+.project-img {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  height: 19rem;
+  z-index: 0;
+}
+
+.project-info {
+  background: var(--clr-white);
+  opacity: 0.95;
+  padding: 1rem 2rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.project-number {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: var(--clr-primary-5);
+  margin-bottom: 0.75rem;
+}
+.project-info h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.project-desc {
+  color: var(--clr-grey-3);
+}
+.project-stack {
+  margin-bottom: 1rem;
+}
+.project-stack span,
+.about-stack span {
+  display: inline-block;
+  background: var(--clr-grey-9);
+  color: var(--clr-grey-5);
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+.about-stack span {
+  margin-top: 0.5rem;
+}
+.project-icon {
+  color: var(--clr-primary-5);
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  transition: var(--transition);
+}
+.project-icon:hover {
+  color: var(--clr-primary-1);
+}
+@media screen and (min-width: 576px) {
+  .project-img {
+    height: 19rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-img {
+    height: 22rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .project {
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+  .project-img {
+    grid-column: 1 / span 8;
+    /* grid-column-end: 8; */
+    grid-row: 1 / 1;
+    height: 30rem;
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
+  }
+  .project-info {
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
+
+    z-index: 2;
+    grid-column: 7 /12;
+    grid-row: 1 / 1;
+    transition: 2s;
+  }
+  .project:nth-of-type(odd) .project-img {
+    grid-column: 5 / -1;
+    grid-row: 1 / 1;
+  }
+  .project:nth-of-type(odd) .project-info {
+    grid-column: 2 / span 5;
+    grid-row: 1 / 1;
+    text-align: left;
+    transition: 2s;
+  }
 }
 
 .project-img-overlay {
@@ -15,7 +119,7 @@
   opacity: 0.7;
   transition: var(--transition);
   //transition: 0.5s ease;
-  z-index: 100;
+  z-index: 1;
 }
 .project:hover .project-img-overlay {
   opacity: 0;

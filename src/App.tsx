@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import MenuBar from "./components/MenuBar/MenuBar";
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 //Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -23,6 +24,10 @@ const routes = [
   {
     path: "/about",
     Component: About,
+  },
+  {
+    path: "/contact",
+    Component: Contact,
   },
 ];
 

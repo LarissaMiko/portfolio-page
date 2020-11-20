@@ -645,10 +645,6 @@ Jobs
           box-shadow: 0 2px var(--clr-primary-5);
 }
 
-.job-info {
-  /* min-height: 420px; */
-}
-
 .job-info h3 {
   font-weight: 400;
 }
@@ -742,25 +738,6 @@ Projects
   z-index: 1;
 }
 
-.project-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, right bottom, from(var(--clr-primary-5)), to(#222));
-  background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
-  opacity: 0.85;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  z-index: 100;
-}
-
-.project:hover .project-img::after {
-  opacity: 0;
-}
-
 .project-info {
   background: var(--clr-white);
   padding: 1rem 2rem;
@@ -782,7 +759,6 @@ Projects
 }
 
 .project-desc {
-  word-spacing: 15px;
   color: var(--clr-grey-3);
 }
 
@@ -862,12 +838,12 @@ Projects
     -ms-grid-row: 1;
     grid-row: 1 / 1;
   }
-  .project:nth-of-type(even) .project-img {
+  .project:nth-of-type(odd) .project-img {
     grid-column: 5 / -1;
     -ms-grid-row: 1;
     grid-row: 1 / 1;
   }
-  .project:nth-of-type(even) .project-info {
+  .project:nth-of-type(odd) .project-info {
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
     grid-column: 2 / span 7;
