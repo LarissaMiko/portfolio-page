@@ -1,3 +1,8 @@
+export interface menuLink {
+  id: number;
+  path: string;
+}
+
 export interface projectType {
   id: number;
   title: string;
@@ -6,4 +11,10 @@ export interface projectType {
   stack: string[];
   url?: string;
   featured: boolean;
+}
+
+export interface socialLinkType {
+  id: number;
+  icon: JSX.Element;
+  url: string;
 }

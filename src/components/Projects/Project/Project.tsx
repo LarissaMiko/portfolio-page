@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa";
 import "./Project.scss";
-import { projectType } from "../../../types/project";
+import { projectType } from "../../../types/pagetypes";
 
 import project0 from "../../../images/project-0.jpg";
 import project1 from "../../../images/project-1.jpg";

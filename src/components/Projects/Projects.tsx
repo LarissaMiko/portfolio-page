@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Project from "./Project/Project";
 import Title from "../Title";
-import { projectType } from "../../types/project";
+import { projectType } from "../../types/pagetypes";
 
 import "./Projects.scss";
 
