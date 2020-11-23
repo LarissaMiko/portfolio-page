@@ -13,6 +13,8 @@
   border-top-right-radius: var(--radius);
   height: 19rem;
   z-index: 0;
+  object-fit: cover;
+  width: 100%;
 }
 
 .project-info {

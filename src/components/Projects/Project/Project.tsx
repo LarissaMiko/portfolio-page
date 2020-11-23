@@ -30,8 +30,17 @@ const Project: FC<projectType> = ({
 }: projectType) => {
   return (
     <div className="project">
-      <img src={projectImages[id]} alt="project" className="project-img"></img>
-      <div className="project-img project-img-overlay"></div>
+      <div
+        className="image-wrapper project-img"
+        style={{ position: "relative", overflow: "hidden" }}
+      >
+        <img
+          src={projectImages[id]}
+          alt="project"
+          className="project-img"
+        ></img>
+        <div className="project-img project-img-overlay"></div>
+      </div>
       <div className="project-info">
         <span className="project-number">0{id + 1}.</span>
         <h3>{title || "default title"}</h3>
