@@ -10,6 +10,7 @@ import SideMenu from "./components/SideMenu/SideMenu";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 //Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -49,6 +50,7 @@ const App: FC = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <MenuBar links={links} toggleSideMenu={toggleSideMenu}></MenuBar>
         <SideMenu

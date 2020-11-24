@@ -8,7 +8,7 @@ import "./FeaturedProjects.scss";
 const FeaturedProjects: FC = () => {
   return (
     <section className="section feature-container">
-      <Title title={"Featured Projects"} />
+      <Title title={"Latest Projects"} />
       <div className="section-center feature-center">
         {projects.map((project) => {
           return project.featured ? (
