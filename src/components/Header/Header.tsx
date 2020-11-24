@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import "./Header.scss";
 import profile from "../../images/profile.jpeg";
-//import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header: FC = () => {
   return (
@@ -11,8 +11,10 @@ const Header: FC = () => {
           <div>
             <div className="underline"></div>
             <h1>I'm Larissa</h1>
-            <h4>Full Stack developer and mathematics graduate</h4>
-            <p className="btn">contact me</p>
+            <h4>Software Engineer and mathematics graduate</h4>
+            <Link to="/contact" className="btn">
+              Contact Me
+            </Link>
           </div>
         </article>
         <img className="hero-img profile-pic" src={profile} alt="profile-pic" />
