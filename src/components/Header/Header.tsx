@@ -10,7 +10,7 @@ const Header: FC = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>I'm Larissa</h1>
+            <h2>Larissa Mikolaschek</h2>
             <h4>Software Engineer and mathematics graduate</h4>
             <Link to="/contact" className="btn">
               Contact Me

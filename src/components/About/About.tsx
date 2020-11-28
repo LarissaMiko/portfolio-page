@@ -77,7 +77,7 @@ const About: FC = () => {
             various applications like customer-portals, websites or chatbots.
             <br></br>
             Apart from that I am passionate about Blockchain Technologies and
-            Applications of modern Cryptography. I love getting into new
+            applications of modern Cryptography. I love getting into new
             programming languages and frameworks and I am always looking for new
             challenges.
           </p>
