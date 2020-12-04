@@ -9,6 +9,7 @@ const Contact: FC = () => {
   const [message, setMessage] = useState("");
 
   const [loader, setLoader] = useState(false);
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -20,8 +21,7 @@ const Contact: FC = () => {
         message: message,
       })
       .then(() => {
-        alert("Thanks for your message!");
-        setLoader(false);
+        setSent(true);
       })
       .catch((error) => {
         alert(error.message);
@@ -62,6 +62,12 @@ const Contact: FC = () => {
               onChange={(e) => setMessage(e.target.value)}
               className="form-control"
             ></textarea>
+            <span
+              className={"sent-message"}
+              style={{ display: sent ? " block" : "none" }}
+            >
+              Thanks for your message!
+            </span>
           </div>
           <button
             type="submit"
