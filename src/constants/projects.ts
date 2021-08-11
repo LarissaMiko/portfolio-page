@@ -35,7 +35,7 @@ export const projects: projectType[] = [
       "A Web-based Meme Generator with a Login Area, Possibility to comment or like memes of others and much more...",
     stack: ["React", "CSS", "Javascript", "MongoDB" , "REST-API", "Bootstrap"],
     github: "https://github.com/LarissaMiko/Meme-Generator",
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
