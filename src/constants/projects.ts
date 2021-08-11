@@ -30,6 +30,15 @@ export const projects: projectType[] = [
   },
   {
     id: 3,
+    title: "Meme Generator",
+    description:
+      "A Web-based Meme Generator with a Login Area, Possibility to comment or like memes of others and much more...",
+    stack: ["React", "CSS", "Javascript", "MongoDB" , "REST-API", "Bootstrap"],
+    github: "https://github.com/LarissaMiko/Meme-Generator",
+    featured: true,
+  },
+  {
+    id: 4,
     title: "Lukas-Brandl Website",
     description:
       "Conception, Design and Implementation of a new Website for a magician from Munich.",
@@ -38,7 +47,7 @@ export const projects: projectType[] = [
     featured: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "One-on-One-Chat",
     description:
       "This chat was designed as a microservice as part of a tool for hosting conferences online. It offers series of short anonymous one-on-one chat-sessions for participants of a conference in order to make new contacts and find people who share interests. It is is connected with other microservices (e.g. Account- or Schedule-Management) via API-endpoints.",
@@ -47,7 +56,7 @@ export const projects: projectType[] = [
     featured: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Toy-Example of a Python Blockchain",
     description:
       "Still in progress. So far: Classes for Block and Blockchain and a Proof-of-Work mechanism with adjustable mine-rate. TODO: Cryptocurrency + Wallet and frontend with React/Vue ",

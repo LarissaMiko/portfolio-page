@@ -72,12 +72,13 @@ const About: FC = () => {
           <p>
             I am a Software Engineer with a Bachelor in Mathematics. At the
             moment I am finishing my Master in Computer Science with a focus on
-            Data Science and Machine Learning. Also I am supporting the
+            Data Science and Machine Learning. 
+            Since April I am working at the Munich based Fintech SecCrest Technology as a Project Manager and Software Developer.
+            Previously I gained experience as a Developer supporting the
             Tech-Team at the digital agency DieProduktMacher with building
             various applications like customer-portals, websites or chatbots.
             <br></br>
-            Apart from that I am passionate about Blockchain Technologies and
-            applications of modern Cryptography. I love getting into new
+            Apart from that I am currently writing my Master Thesis with the goal of exploring the use of Evolutionary Algorithms for financial applications. I love getting into new
             programming languages and frameworks and I am always looking for new
             challenges.
           </p>
